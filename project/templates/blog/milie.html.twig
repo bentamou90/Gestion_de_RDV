@@ -1,0 +1,14 @@
+{% block head %}
+<link href="{{ asset('css/style1.css')}}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<section>
+<img class="one" src="{{asset('images/photo1.jpg')}}"/>
+</section>
+<section class="card-body">
+<h3> Consulter rapidement un medecin d'etat en un seul clique </h3>
+     <button id="btn" onclick="window.location.href = 'premier';">Voir Le Menu</button>   
+</section>
+
+{% endblock %}

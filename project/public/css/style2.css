@@ -1,0 +1,96 @@
+.one{
+    background-image: url("/images/one.jpg");
+    height: 500px; 
+}
+h2{
+   margin-left: 4rem;
+   font-style: oblique;
+   color: aliceblue;
+}
+h3{
+    margin-top: 5rem;
+    font-weight: lighter;
+    font-style: italic;
+    color: aliceblue;
+}
+.two{
+    margin-top: 4rem;
+}
+
+.contain{
+    display:flex;
+    align-items: center;   
+    position:absolute;
+      top: 600px;
+   justify-content:space-between;
+   color: white;
+ }
+ 
+ #sedan ,#suvs, #lux{
+     height:25rem;
+     width:25rem ;
+     align-items: center;
+  
+
+  }
+ 
+  #sedan{
+     background-color: hsl(31, 77%, 52%);
+    
+     
+      
+  }
+  #suvs{
+     background-color:hsl(184, 100%, 22%) ;
+ }
+  #lux{
+     background-color:hsl(179, 100%, 13%) ;
+  }
+  p{
+     position: absolute;
+     top: 25%;
+     margin-left: 3rem;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     font-weight: bolder;
+     line-height: 2rem;
+     font-style: italic;
+     
+  }
+ 
+ 
+ @media screen and (max-width:900px){
+     
+ .contain{
+     display: grid;
+     grid-column: 3fr;
+     grid-row: 3fr 3fr 4fr;
+     grid-area:
+     "sedan"
+     "suvs"
+     "lux";
+ }
+ #sedan, #suvs, #lux {
+     height: 30rem;
+     width: 33rem;
+    
+ }
+ 
+
+ /*the position  of all texts */
+ #text{
+     position: absolute;
+         top: 10rem;
+ }
+ #text2{
+     position: absolute;
+            top: 40rem;
+ }
+ #text3{
+     position:absolute;
+          top:70rem;
+ }
+
+ 
+
+ 
+ }

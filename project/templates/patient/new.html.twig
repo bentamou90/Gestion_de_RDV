@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+{% block head %}
+ 
+ {% block title %}New Patient{% endblock %}
+  <link href="{{ asset('css/style.css')}}" type="text/css" rel="stylesheet">
+{% endblock %} 
+
+{% block body %}
+    <h1>Créer une nouvelle consultation </h1>
+
+    {{ include('patient/_form.html.twig') }}
+
+    <a href="{{ path('patient_new') }}">back to list</a>
+{% endblock %}

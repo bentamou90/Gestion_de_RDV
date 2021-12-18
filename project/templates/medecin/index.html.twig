@@ -1,0 +1,24 @@
+{% extends "base.html.twig" %} 
+{% block title %} Voici les medecins ! {% endblock %}
+
+{% block body %}
+<h1> Liste des contats des medecins </h1>
+<table class="table">
+  <thead>
+   <tr>
+    <th>email</th>
+    <th>specialité</th>
+    <th>contact</th>
+   </tr>
+  </tbody>
+   {% for medecin in LesMedecins %}
+   <tr>
+        <td>{{medecin.email}}</td>
+        <td>{{medecin.specialite}}</td>
+        <td>{{medecin.contact}}</td>
+   </tr>
+ 
+  {% endfor %}  
+</table>
+
+{% endblock %}

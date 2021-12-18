@@ -1,0 +1,22 @@
+.one {
+    width: 650px;
+    float: left;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-bottom: 0%; 
+    border-top: 0px;
+
+}
+.card-body{
+    float: right;
+    width: 25em;
+    margin-right: 9rem;
+    margin-top: 12rem;
+}
+#btn{
+    width: 17rem;
+    height: 4rem;
+    border-radius: 3em;
+    color: aquamarine;
+    background-color: black;
+}
